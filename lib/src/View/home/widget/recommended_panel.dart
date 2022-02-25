@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_meditation_app/src/Logic/bloc/genres/genres_bloc.dart';
 import 'package:flutter_meditation_app/src/View/home/widget/recommended_button.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class RecommendedPanel extends StatefulWidget {
   const RecommendedPanel({Key? key}) : super(key: key);
@@ -15,16 +16,19 @@ class _RecommendedPanelState extends State<RecommendedPanel> {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          margin: const EdgeInsets.only(left: 10, top: 10),
-          child: const Text(
+          margin: const EdgeInsets.only(left: 10, top: 0),
+          child: Text(
             "Recomendados",
-            style: TextStyle(
-              fontSize: 17,
+            style: GoogleFonts.mukta(
+              color: Colors.blue,
+              fontSize: 20,
               fontWeight: FontWeight.bold,
               decoration: TextDecoration.underline,
+              decorationColor: Colors.white,
+              decorationThickness: 3,
             ),
           ),
         ),
@@ -41,8 +45,8 @@ class _RecommendedPanelState extends State<RecommendedPanel> {
                       return const ButtonBar(
                         children: [
                           RecommendedButton(
-                            pri: Color.fromRGBO(161, 196, 253, 1),
-                            sec: Color.fromRGBO(194, 233, 251, 1),
+                            pri: Color.fromRGBO(70, 52, 248, 1),
+                            sec: Color.fromRGBO(124, 142, 243, 1),
                             tit: "Causas de la depresion",
                             des: "Post semanal",
                           ),
@@ -52,8 +56,8 @@ class _RecommendedPanelState extends State<RecommendedPanel> {
                       return const ButtonBar(
                         children: [
                           RecommendedButton(
-                            pri: Color.fromRGBO(132, 250, 176, 1),
-                            sec: Color.fromRGBO(143, 211, 244, 1),
+                            pri: Color.fromARGB(255, 86, 250, 146),
+                            sec: Color.fromARGB(255, 113, 203, 248),
                             tit: "Canciones para dormir",
                             des: "Listo para dormir",
                           ),
@@ -63,14 +67,14 @@ class _RecommendedPanelState extends State<RecommendedPanel> {
                       return const ButtonBar(
                         children: [
                           RecommendedButton(
-                            pri: Color.fromRGBO(255, 154, 158, 1),
-                            sec: Color.fromRGBO(250, 208, 196, 1),
+                            pri: Color.fromARGB(255, 235, 13, 20),
+                            sec: Color.fromARGB(255, 226, 129, 129),
                             tit: "Meditacion",
                             des: "Audio diario",
                           ),
                           RecommendedButton(
-                            pri: Color.fromRGBO(132, 250, 176, 1),
-                            sec: Color.fromRGBO(143, 211, 244, 1),
+                            pri: Color.fromARGB(255, 86, 250, 146),
+                            sec: Color.fromARGB(255, 113, 203, 248),
                             tit: "Canciones para dormir",
                             des: "Listo para dormir",
                           ),
@@ -81,26 +85,26 @@ class _RecommendedPanelState extends State<RecommendedPanel> {
                       return const ButtonBar(
                         children: [
                           RecommendedButton(
-                            pri: Color.fromRGBO(255, 154, 158, 1),
-                            sec: Color.fromRGBO(250, 208, 196, 1),
+                            pri: Color.fromARGB(255, 235, 13, 20),
+                            sec: Color.fromARGB(255, 226, 129, 129),
                             tit: "Meditacion",
                             des: "Audio diario",
                           ),
                           RecommendedButton(
-                            pri: Color.fromRGBO(161, 196, 253, 1),
-                            sec: Color.fromRGBO(194, 233, 251, 1),
+                            pri: Color.fromRGBO(70, 52, 248, 1),
+                            sec: Color.fromRGBO(124, 142, 243, 1),
                             tit: "Causas de la depresion",
                             des: "Post semanal",
                           ),
                           RecommendedButton(
-                            pri: Color.fromRGBO(161, 140, 209, 1),
-                            sec: Color.fromRGBO(251, 194, 235, 1),
+                            pri: Color.fromARGB(255, 113, 57, 245),
+                            sec: Color.fromARGB(255, 205, 152, 255),
                             tit: "Otros titulos",
                             des: "Mixes",
                           ),
                           RecommendedButton(
-                            pri: Color.fromRGBO(132, 250, 176, 1),
-                            sec: Color.fromRGBO(143, 211, 244, 1),
+                            pri: Color.fromARGB(255, 86, 250, 146),
+                            sec: Color.fromARGB(255, 113, 203, 248),
                             tit: "Canciones para dormir",
                             des: "Listo para dormir",
                           ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class RecentButton extends StatefulWidget {
   final Color pri, sec;
@@ -22,6 +23,8 @@ class _RecentButtonState extends State<RecentButton> {
     return Padding(
       padding: const EdgeInsets.all(10),
       child: Container(
+        width: MediaQuery.of(context).size.width * 0.8,
+        height: MediaQuery.of(context).size.height * 0.1,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(30),
           gradient: LinearGradient(
@@ -41,7 +44,7 @@ class _RecentButtonState extends State<RecentButton> {
             children: [
               Text(
                 widget.tit,
-                style: const TextStyle(
+                style: GoogleFonts.mukta(
                   color: Colors.white,
                   fontSize: 20,
                   fontWeight: FontWeight.bold,

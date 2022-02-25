@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class RecommendedButton extends StatefulWidget {
   final Color pri, sec;
@@ -41,27 +42,25 @@ class _RecommendedButtonState extends State<RecommendedButton> {
             children: [
               Text(
                 widget.tit,
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  decoration: TextDecoration.none,
+                style: GoogleFonts.mukta(
                   color: Colors.white,
                   fontSize: 20,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
               Text(
                 widget.des,
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  decoration: TextDecoration.none,
+                style: GoogleFonts.mukta(
                   color: Colors.white,
                   fontSize: 15,
+                  fontWeight: FontWeight.normal,
                 ),
               ),
             ],
           ),
           const Icon(
             Icons.play_arrow_rounded,
-            size: 50,
+            size: 30,
             color: Colors.white,
           )
         ],

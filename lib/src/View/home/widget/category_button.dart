@@ -13,8 +13,8 @@ class CategoryButton extends StatefulWidget {
 }
 
 class _CategoryButtonState extends State<CategoryButton> {
-  Color unselect = const Color.fromRGBO(37, 117, 252, 1);
-  Color select = const Color.fromRGBO(106, 17, 203, 1);
+  Color unselect = const Color.fromRGBO(61, 64, 75, 1);
+  Color select = const Color.fromRGBO(72, 129, 235, 1);
 
   @override
   Widget build(BuildContext context) {

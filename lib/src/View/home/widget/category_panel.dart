@@ -12,17 +12,7 @@ class CategoryPanel extends StatefulWidget {
 class _CategoryPanelState extends State<CategoryPanel> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.centerLeft,
-          end: Alignment.centerRight,
-          colors: <Color>[
-            Color.fromRGBO(48, 207, 208, 1),
-            Color.fromRGBO(51, 8, 103, 1),
-          ],
-        ),
-      ),
+    return SizedBox(
       height: 50,
       child: ListView(
         scrollDirection: Axis.horizontal,

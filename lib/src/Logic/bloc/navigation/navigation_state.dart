@@ -4,7 +4,7 @@ part of 'navigation_bloc.dart';
 class NavigationState {
   final int tabIndex;
 
-  NavigationState({this.tabIndex = 1});
+  const NavigationState({this.tabIndex = 0});
 
   NavigationState copyWith({int? tabIndex}) => NavigationState(
         tabIndex: tabIndex ?? this.tabIndex,
